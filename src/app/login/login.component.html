@@ -50,7 +50,7 @@
               <p class="lead">INGRESAR LAS CREDENCIALES</p>
             </div>
             <div class="body">
-              <form class="form-auth-small" action="index.html">
+              <form class="form-auth-small" (ngSubmit)="ingresar()">
                 <div class="form-group">
                   <label for="signin-email" class="control-label sr-only">Usuario</label>
                   <input type="email" class="form-control" id="signin-email" value="" placeholder="Usuario">
