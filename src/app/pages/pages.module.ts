@@ -5,6 +5,11 @@ import {Graficas1Component} from './graficas1/graficas1.component';
 import {PagesComponent} from './pages.component';
 import {SharedModule} from '../shared/shared.module';
 import {PagesRoutingModule} from './pages-routing.module';
+import { BlankComponent } from './blank/blank.component';
+import {FormsModule} from '@angular/forms';
+import {IncreementadorComponent} from '../components/increementador/increementador.component';
+import {ChartsModule} from 'ng2-charts/ng2-charts';
+import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.component';
 
 
 @NgModule({
@@ -12,7 +17,10 @@ import {PagesRoutingModule} from './pages-routing.module';
     DashboardComponent,
     ProgressComponent,
     Graficas1Component,
-    PagesComponent
+    PagesComponent,
+    BlankComponent,
+    IncreementadorComponent,
+    GraficoDonaComponent
   ],
   exports: [
     DashboardComponent,
@@ -22,7 +30,9 @@ import {PagesRoutingModule} from './pages-routing.module';
   ],
   imports: [
     SharedModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    FormsModule,
+    ChartsModule
   ]
 })
 export class PagesModule {}

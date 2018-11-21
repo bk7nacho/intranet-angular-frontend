@@ -1,3 +1,19 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row clearfix">
+  <div class="col-lg-6 col-md-6" >
+    <app-grafico-dona
+      [leyenda]="graficos.grafico1.leyenda"
+      [data] = "graficos.grafico1.data"
+      [label]="graficos.grafico1.labels"
+      [type]="graficos.grafico1.type"
+    ></app-grafico-dona>
+  </div>
+  <div class="col-lg-6 col-md-6" >
+    <app-grafico-dona
+      [leyenda]="graficos.grafico2.leyenda"
+      [data] = "graficos.grafico2.data"
+      [label]="graficos.grafico2.labels"
+      [type]="graficos.grafico2.type"
+    ></app-grafico-dona>
+  </div>
+</div>
+

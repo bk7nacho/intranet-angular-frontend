@@ -1,0 +1,22 @@
+<div class="card open_task">
+  <div class="header">
+    <h2>{{ leyenda }}</h2>
+  </div>
+  <div class="body">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend" id="button-addon3">
+        <button class="btn btn-primary" type="button" (click)="cambiarValor(+5)">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn btn-primary" type="button" (click)="cambiarValor(-5)">
+          <i class="fa fa-minus"></i>
+        </button>
+      </div>
+      <input #txtProgress type="number" min="0" max="0" class="form-control" name="progreso"
+             [(ngModel)] = "progreso"
+             (ngModelChange)="onChanges($event)"
+      />
+    </div>
+  </div>
+</div>
+

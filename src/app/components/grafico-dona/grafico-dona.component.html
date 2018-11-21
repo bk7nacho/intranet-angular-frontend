@@ -1,0 +1,14 @@
+<div class="card open_task">
+  <div class="header">
+    <h2>{{ leyenda }}</h2>
+  </div>
+  <div class="body">
+    <div style="display: block">
+      <canvas baseChart
+              [data]="doughnutChartData"
+              [labels]="doughnutChartLabels"
+              [chartType]="doughnutChartType"></canvas>
+    </div>
+  </div>
+</div>
+
