@@ -10,6 +10,9 @@ import {FormsModule} from '@angular/forms';
 import {IncreementadorComponent} from '../components/increementador/increementador.component';
 import {ChartsModule} from 'ng2-charts/ng2-charts';
 import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import {CommonModule} from '@angular/common';
 
 
 @NgModule({
@@ -20,7 +23,9 @@ import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.comp
     PagesComponent,
     BlankComponent,
     IncreementadorComponent,
-    GraficoDonaComponent
+    GraficoDonaComponent,
+    PromesasComponent,
+    RxjsComponent
   ],
   exports: [
     DashboardComponent,
@@ -32,7 +37,8 @@ import {GraficoDonaComponent} from '../components/grafico-dona/grafico-dona.comp
     SharedModule,
     PagesRoutingModule,
     FormsModule,
-    ChartsModule
+    ChartsModule,
+    CommonModule
   ]
 })
 export class PagesModule {}

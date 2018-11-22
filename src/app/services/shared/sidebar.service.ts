@@ -11,7 +11,10 @@ export class SidebarService {
       submenu: [
         { titulo: 'Dashboard', icono: 'icon-home', url: '/dashboard' },
         { titulo: 'ProgressBar', icono: 'icon-envelope', url: '/progress' },
-        { titulo: 'Gráficas', icono: 'icon-bubbles', url: '/graficas1' }
+        { titulo: 'Gráficas', icono: 'icon-bubbles', url: '/graficas1' },
+        { titulo: 'Pagina en Blanco', icono: 'icon-bubbles', url: '/blank' },
+        { titulo: 'Promesas', icono: 'icon-bubbles', url: '/promesas' },
+        { titulo: 'Rxjs', icono: 'icon-bubbles', url: '/rxjs' }
       ]
     }
   ];
